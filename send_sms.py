@@ -2,7 +2,7 @@ import sys
 from twilio.rest import Client
 from credentials import account_sid, auth_token, my_cell, my_twilio
 
-sms_msg=sys.argv[1]
+sms_msg=' '.join(sys.argv[1:])
 # Find these values at https://twilio.com/user/account
 client = Client(account_sid, auth_token)
 
